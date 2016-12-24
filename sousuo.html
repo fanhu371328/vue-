@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>vue百度搜索</title>
+    
+    <link rel="stylesheet" href="css/mobile.common.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div id="app">
+    		<h3 class="title">给我搜</h3>
+    		
+    		<!--展示部分-->
+	    <div class="content">
+	    		<div class="first">
+	    			<div class="content_input clearfix">
+				      <input type="text" class="search_field" @keyup="get($event)" @keydown.down.prevent="changeDown"  @keydown.up.prevent="changeUp" v-model='msg' placeholder="输入要搜索的内容">
+				      <button class="search_btn" @click='open'>查询</button>     
+				</div>
+	    		</div>
+	    		<ul class="list">
+	    			<li v-for="item in messages" :class="{active:$index==now}" @mouseover="change($index)" @click='open'> {{item}} </li>
+	    		</ul>
+	    		<p v-show='messages.length==0'>暂无数据...</p>
+	    </div>
+	    
+    </div>
+  </body>
+  <script src="./js/vue.js"></script>
+  <script src="js/vue-resource.js"></script>
+  <script src="js/index.js"></script>
+</html>
