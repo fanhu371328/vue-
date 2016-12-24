@@ -1,0 +1,31 @@
+#app{width: 100%;height: 100%;}
+.title {width: 100%;text-align: center;line-height: 50px;color: #fff;background: yellowgreen;}
+.content {width: 639px;margin: 50px auto;position: relative;}
+.content .first {width: 100%;font-size: 0;}
+/*---------------------------------------------搜索框*/
+.content_input .search_field{ /*输入框样式*/
+    width: 536px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #3388FF;
+    float: left;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #666;
+}
+.content_input .search_btn{ /*按钮样式*/
+    width: 103px;
+    height: 38px;
+    line-height: 38px;
+    color: #FFFFFF;
+    font-weight: 600;
+    background: #3388FF;
+    border:none;
+    float: left;
+    font-size: 20px;
+}
+/*===-----------------------------*/
+.list {border: 1px solid #ccc;border-top: none;}
+.list li{font-size: 18px;padding:5px 10px;}
+.content>p {font-size: 18px;}
+.active {background: #f0f0f0;}
